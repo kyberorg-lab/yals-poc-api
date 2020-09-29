@@ -1,0 +1,39 @@
+version: '3'
+
+networks:
+  net:
+
+services:
+  # Database
+  db:
+    image: postgres:12.4
+    volumes:
+      - ./db:/var/lib/postgresql/data
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_INITDB_ARGS: --data-checksums
+      PGDATA: /var/lib/postgresql/data/pgdata
+      POSTGRES_USER: yals
+      POSTGRES_PASSWORD: yals
+      POSTGRES_DB: yals
+    networks:
+      - net
+  # pgadmin
+  pgadmin:
+    depends_on:
+      - db
+    image: dpage/pgadmin4:4.26
+    restart: always
+    ports:
+      - '9090:80'
+    environment:
+      PGADMIN_DEFAULT_EMAIL: void@domain.tld
+      PGADMIN_DEFAULT_PASSWORD: password
+      PGADMIN_SERVER_JSON_FILE: /pgadmin4/servers.json
+    volumes:
+      - ./pgadmin:/var/lib/pgadmin
+      - ./servers.json:/pgadmin4/servers.json
+    networks:
+      - net
