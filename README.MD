@@ -22,6 +22,8 @@ EnvVars:
 
 * DB_PASSWORD: `password for db user`
 
+* CORS_ALLOWED_DOMAINS: `normally frontend domain (format: https://mydomain.tld)`
+
 Optional EnvVars: 
 
 * LOG_LEVEL_APP: `see Logging part`

@@ -1,9 +1,15 @@
-
 {
   "properties": [
     {
       "name": "application.stage",
       "type": "java.lang.String",
       "description": "This property defines Stage in Bugsnag."
+    },
+    {
+      "name": "application.cors.origin",
+      "type": "java.lang.String",
+      "description": "Defines allowed CORS origins."
     }
-  ] }
+    }
+  ]
+}
