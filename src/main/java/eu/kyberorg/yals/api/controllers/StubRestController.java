@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("stub")
 public class StubRestController {
 
-	@GetMapping("/")
+	@GetMapping({"/", ""})
 	public StubMessage stub() {
 		return new StubMessage("hello hello");
 	}
