@@ -68,6 +68,9 @@ PostgreSQL can be stopped from `docker/local` directory by running:
 docker-compose down
 ```
 
+### API Doks
+Located: [here](http://localhost:8080/api.html)
+
 ### Logging
 To adjust logging we use ENV variables or `-D` vars: 
 
