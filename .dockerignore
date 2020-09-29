@@ -1,0 +1,15 @@
+.git
+ .firebase
+ .editorconfig
+ /.idea
+ /.mvn
+ /local
+ /docs
+ .gitignore
+ *.zip
+ *.md
+ Dockerfile
+ Jenkinsfile
+ mvnw
+ mvnw.cmd
+ *.iml

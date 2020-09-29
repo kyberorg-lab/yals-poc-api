@@ -15,7 +15,7 @@
 	<description>Yals API</description>
 
 	<properties>
-		<java.version>15</java.version>
+		<java.version>14</java.version>
 	</properties>
 
 	<dependencies>
@@ -85,6 +85,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>yals</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
