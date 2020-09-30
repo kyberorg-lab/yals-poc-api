@@ -6,7 +6,7 @@ networks:
 services:
   # Database
   db:
-    image: postgres:12.4
+    image: postgres:13.0
     volumes:
       - ./db:/var/lib/postgresql/data
     restart: always
