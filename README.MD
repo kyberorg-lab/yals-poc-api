@@ -3,8 +3,7 @@ This is API of Proof of concept for Yals project
 
 ## For Ops
 ### How to Deploy app
-
-* Our docker image: `kyberorglab/yals-api`
+Our docker image: `kyberorglab/yals-api`
 
 * We need H2 (default profile) or PostgreSQL database (local/prod profiles) to run
 

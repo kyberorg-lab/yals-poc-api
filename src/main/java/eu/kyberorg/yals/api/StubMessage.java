@@ -4,5 +4,5 @@ import lombok.Data;
 
 public @Data
 class StubMessage {
-	final String message;
+	private final String message;
 }
