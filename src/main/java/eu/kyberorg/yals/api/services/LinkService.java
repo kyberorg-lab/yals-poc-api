@@ -20,7 +20,7 @@ public class LinkService {
 		try {
 			return linkDao.saveAndFlush(linkObject);
 		} catch (Exception e) {
-			throw new Exception("Failed to save");
+			throw new Exception("Failed to save new link");
 		}
 	}
 }
