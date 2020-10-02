@@ -29,4 +29,8 @@ public class LinkService {
 	public Optional<Link> getLinkByIdent(String ident) {
 		return linkDao.findSingleByIdent(ident);
 	}
+
+	public long howManyLinksWeHave() {
+		return linkDao.count();
+	}
 }
