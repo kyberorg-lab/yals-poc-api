@@ -4,6 +4,8 @@ import eu.kyberorg.yals.api.models.Link;
 import eu.kyberorg.yals.api.models.dao.LinkDao;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 public class LinkService {
 
@@ -22,5 +24,9 @@ public class LinkService {
 		} catch (Exception e) {
 			throw new Exception("Failed to save new link");
 		}
+	}
+
+	public Optional<Link> getLinkByIdent(String ident) {
+		return linkDao.findSingleByIdent(ident);
 	}
 }
